@@ -1,3 +1,6 @@
+# Vendored build tooling (local Maven install used by build.bat) - not committed
+/build-tools/
+
 /**/target/
 /**/.idea/
 /**/.settings/
