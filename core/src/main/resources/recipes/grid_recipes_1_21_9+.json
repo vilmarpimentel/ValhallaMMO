@@ -286,6 +286,21 @@
     "hiddenFromBook": false,
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "IMMUNITY_REDUCTION",
+          "value": 0.2,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "WITHER_ROSE",
+          "name": "attribute_add_immunity_reduction",
+          "priority": "SOON"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.ItemType",
         "DATA": {
           "material": "COPPER_SWORD",
@@ -297,7 +312,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_DAMAGE",
-          "value": 8.0,
+          "value": 3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -320,7 +335,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.8,
+          "value": 2.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -405,7 +420,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
         "DATA": {
           "mode": "ADD_ON_DEFAULT",
-          "amplifier": 0.4,
+          "amplifier": 0.2,
           "skillRange": 245.0,
           "rangeOffset": 55.0,
           "minimum": 0.0,
@@ -422,7 +437,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
         "DATA": {
           "mode": "ADD_ON_DEFAULT",
-          "amplifier": 6.0,
+          "amplifier": 2,
           "skillRange": 245.0,
           "rangeOffset": 55.0,
           "minimum": 0.0,
@@ -594,7 +609,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.5,
+          "value": 0.6,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -1050,7 +1065,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.6,
+          "value": 1.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -2453,7 +2468,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 4.0,
+          "value": 2,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -2468,7 +2483,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "IMMUNITY_REDUCTION",
-          "value": 0.5,
+          "value": 0.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -2483,7 +2498,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "ARMOR_PENETRATION_FRACTION",
-          "value": 0.3,
+          "value": 0.35,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",

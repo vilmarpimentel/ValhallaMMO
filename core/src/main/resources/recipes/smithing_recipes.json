@@ -849,7 +849,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 4.0,
+          "value": 2,
           "operation": "ADD_NUMBER",
           "smallIncrement": 0.1,
           "bigIncrement": 1.0,
@@ -1321,7 +1321,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.9600000000000001,
+          "value": 0.6,
           "operation": "ADD_NUMBER",
           "smallIncrement": 0.1,
           "bigIncrement": 1.0,
@@ -2096,7 +2096,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_DAMAGE",
-          "value": 11,
+          "value": 6,
           "operation": "ADD_NUMBER",
           "smallIncrement": 0.1,
           "bigIncrement": 1.0,
@@ -2133,7 +2133,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
         "DATA": {
           "mode": "ADD_ON_DEFAULT",
-          "amplifier": 0.4,
+          "amplifier": 0.2,
           "skillRange": 185.0,
           "rangeOffset": 115.0,
           "minimum": 0.0,
@@ -2150,7 +2150,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
         "DATA": {
           "mode": "ADD_ON_DEFAULT",
-          "amplifier": 6.0,
+          "amplifier": 2,
           "skillRange": 185.0,
           "rangeOffset": 115.0,
           "minimum": 0.0,

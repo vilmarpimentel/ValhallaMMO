@@ -2200,7 +2200,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.0,
+          "value": 0.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -4743,7 +4743,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.0,
+          "value": 0.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -5209,7 +5209,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.0,
+          "value": 0.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -6285,7 +6285,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.0,
+          "value": 0.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -6861,7 +6861,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.0,
+          "value": 0.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -7054,7 +7054,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.0,
+          "value": 0.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -11062,7 +11062,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.0,
+          "value": 0.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -11544,7 +11544,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.0,
+          "value": 0.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -12098,7 +12098,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.0,
+          "value": 0.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -14835,7 +14835,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.0,
+          "value": 0.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
