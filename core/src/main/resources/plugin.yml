@@ -117,7 +117,7 @@ permissions:
     default: true
     description: "Allows the user to create their own party"
   valhalla.allrecipes:
-    default: op
+    default: false
     description: "All Valhalla custom crafting recipes will be available to the player with this permission"
   valhalla.attribute:
     default: op
