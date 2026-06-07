@@ -192,7 +192,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.5,
+          "value": 0.6,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -459,6 +459,23 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAAMV09PREVOX1NXT1JEc3EAfgAAc3EAfgADdXEAfgAG\r\nAAAABHEAfgAIdAAJbWV0YS10eXBldAAMZGlzcGxheS1uYW1ldAARY3VzdG9tLW1vZGVsLWRhdGF1\r\ncQB+AAYAAAAEdAAISXRlbU1ldGF0AApVTlNQRUNJRklDdACbeyJleHRyYSI6W3sidGV4dCI6Ijwi\r\nfSx7ImNsaWNrRXZlbnQiOnsiYWN0aW9uIjoib3Blbl91cmwiLCJ2YWx1ZSI6Imh0dHA6Ly9sYW5n\r\nLm1hdGVyaWFsLXdvb2Rlbi1yYXBpZXI+In0sInRleHQiOiJsYW5nLm1hdGVyaWFsLXdvb2Rlbi1y\r\nYXBpZXI+In1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj1+\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
+        "DATA": {
+          "mode": "ADD_ON_DEFAULT",
+          "amplifier": 0.2,
+          "skillRange": 215.0,
+          "rangeOffset": 85.0,
+          "minimum": 0.0,
+          "skillToScaleWith": "SMITHING",
+          "skillEfficiency": 1.0,
+          "minimumValue": 0.0,
+          "attribute": "GENERIC_ATTACK_SPEED",
+          "icon": "GOLDEN_SWORD",
+          "name": "attribute_scale_generic_attack_speed",
+          "priority": "NEUTRAL"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -525,7 +542,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 4.0,
+          "value": 2.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -540,7 +557,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "IMMUNITY_REDUCTION",
-          "value": 0.5,
+          "value": 0.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -555,7 +572,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "ARMOR_PENETRATION_FRACTION",
-          "value": 0.3,
+          "value": 0.35,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -707,6 +724,36 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAAKSVJPTl9TV09SRHNxAH4AAHNxAH4AA3VxAH4ABgAA\r\nAARxAH4ACHQACW1ldGEtdHlwZXQADGRpc3BsYXktbmFtZXQAEWN1c3RvbS1tb2RlbC1kYXRhdXEA\r\nfgAGAAAABHQACEl0ZW1NZXRhdAAKVU5TUEVDSUZJQ3QAl3siZXh0cmEiOlt7InRleHQiOiI8In0s\r\neyJjbGlja0V2ZW50Ijp7ImFjdGlvbiI6Im9wZW5fdXJsIiwidmFsdWUiOiJodHRwOi8vbGFuZy5t\r\nYXRlcmlhbC1pcm9uLWRhZ2dlcj4ifSwidGV4dCI6ImxhbmcubWF0ZXJpYWwtaXJvbi1kYWdnZXI+\r\nIn1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj18\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "IMMUNITY_REDUCTION",
+          "value": 0.2,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "WITHER_ROSE",
+          "name": "attribute_add_immunity_reduction",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ATTACK_DAMAGE",
+          "value": 4.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "IRON_SWORD",
+          "name": "attribute_add_generic_attack_damage",
+          "priority": "SOON"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -758,7 +805,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.8,
+          "value": 2.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -820,7 +867,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
         "DATA": {
           "mode": "ADD_ON_DEFAULT",
-          "amplifier": 4.0,
+          "amplifier": 2.0,
           "skillRange": 215.0,
           "rangeOffset": 85.0,
           "minimum": 0.0,
@@ -907,6 +954,36 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAALU1RPTkVfU1dPUkRzcQB+AABzcQB+AAN1cQB+AAYA\r\nAAAEcQB+AAh0AAltZXRhLXR5cGV0AAxkaXNwbGF5LW5hbWV0ABFjdXN0b20tbW9kZWwtZGF0YXVx\r\nAH4ABgAAAAR0AAhJdGVtTWV0YXQAClVOU1BFQ0lGSUN0AJl7ImV4dHJhIjpbeyJ0ZXh0IjoiPCJ9\r\nLHsiY2xpY2tFdmVudCI6eyJhY3Rpb24iOiJvcGVuX3VybCIsInZhbHVlIjoiaHR0cDovL2xhbmcu\r\nbWF0ZXJpYWwtc3RvbmUtZGFnZ2VyPiJ9LCJ0ZXh0IjoibGFuZy5tYXRlcmlhbC1zdG9uZS1kYWdn\r\nZXI+In1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj18\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "IMMUNITY_REDUCTION",
+          "value": 0.2,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "WITHER_ROSE",
+          "name": "attribute_add_immunity_reduction",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ATTACK_DAMAGE",
+          "value": 3.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "IRON_SWORD",
+          "name": "attribute_add_generic_attack_damage",
+          "priority": "SOON"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -958,7 +1035,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.8,
+          "value": 2.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -1020,7 +1097,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
         "DATA": {
           "mode": "ADD_ON_DEFAULT",
-          "amplifier": 4.0,
+          "amplifier": 2.0,
           "skillRange": 245.0,
           "rangeOffset": 55.0,
           "minimum": 0.0,
@@ -1105,7 +1182,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 4.0,
+          "value": 2.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -1120,7 +1197,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "IMMUNITY_REDUCTION",
-          "value": 0.5,
+          "value": 0.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -1135,7 +1212,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "ARMOR_PENETRATION_FRACTION",
-          "value": 0.3,
+          "value": 0.35,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -1203,7 +1280,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 4.0,
+          "value": 2.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -1233,7 +1310,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "IMMUNITY_REDUCTION",
-          "value": 0.5,
+          "value": 0.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -1248,7 +1325,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "ARMOR_PENETRATION_FRACTION",
-          "value": 0.3,
+          "value": 0.35,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -1618,6 +1695,36 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAANRElBTU9ORF9TV09SRHNxAH4AAHNxAH4AA3VxAH4A\r\nBgAAAARxAH4ACHQACW1ldGEtdHlwZXQADGRpc3BsYXktbmFtZXQAEWN1c3RvbS1tb2RlbC1kYXRh\r\ndXEAfgAGAAAABHQACEl0ZW1NZXRhdAAKVU5TUEVDSUZJQ3QAnXsiZXh0cmEiOlt7InRleHQiOiI8\r\nIn0seyJjbGlja0V2ZW50Ijp7ImFjdGlvbiI6Im9wZW5fdXJsIiwidmFsdWUiOiJodHRwOi8vbGFu\r\nZy5tYXRlcmlhbC1kaWFtb25kLWRhZ2dlcj4ifSwidGV4dCI6ImxhbmcubWF0ZXJpYWwtZGlhbW9u\r\nZC1kYWdnZXI+In1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj18\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "IMMUNITY_REDUCTION",
+          "value": 0.2,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "WITHER_ROSE",
+          "name": "attribute_add_immunity_reduction",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ATTACK_DAMAGE",
+          "value": 5.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "IRON_SWORD",
+          "name": "attribute_add_generic_attack_damage",
+          "priority": "SOON"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -1653,7 +1760,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.8,
+          "value": 2.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -2093,7 +2200,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.8,
+          "value": 1.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -2583,7 +2690,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.6,
+          "value": 1.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -3190,6 +3297,23 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAANRElBTU9ORF9TV09SRHNxAH4AAHNxAH4AA3VxAH4A\r\nBgAAAARxAH4ACHQACW1ldGEtdHlwZXQADGRpc3BsYXktbmFtZXQAEWN1c3RvbS1tb2RlbC1kYXRh\r\ndXEAfgAGAAAABHQACEl0ZW1NZXRhdAAKVU5TUEVDSUZJQ3QAnXsiZXh0cmEiOlt7InRleHQiOiI8\r\nIn0seyJjbGlja0V2ZW50Ijp7ImFjdGlvbiI6Im9wZW5fdXJsIiwidmFsdWUiOiJodHRwOi8vbGFu\r\nZy5tYXRlcmlhbC1kaWFtb25kLXJhcGllcj4ifSwidGV4dCI6ImxhbmcubWF0ZXJpYWwtZGlhbW9u\r\nZC1yYXBpZXI+In1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj1+\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
+        "DATA": {
+          "mode": "ADD_ON_DEFAULT",
+          "amplifier": 0.2,
+          "skillRange": 215.0,
+          "rangeOffset": 85.0,
+          "minimum": 0.0,
+          "skillToScaleWith": "SMITHING",
+          "skillEfficiency": 1.0,
+          "minimumValue": 0.0,
+          "attribute": "GENERIC_ATTACK_SPEED",
+          "icon": "GOLDEN_SWORD",
+          "name": "attribute_scale_generic_attack_speed",
+          "priority": "NEUTRAL"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -3256,7 +3380,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 4.0,
+          "value": 2.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -3271,7 +3395,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "IMMUNITY_REDUCTION",
-          "value": 0.5,
+          "value": 0.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -3286,7 +3410,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "ARMOR_PENETRATION_FRACTION",
-          "value": 0.3,
+          "value": 0.35,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -3395,6 +3519,36 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAAKSVJPTl9TV09SRHNxAH4AAHNxAH4AA3VxAH4ABgAA\r\nAARxAH4ACHQACW1ldGEtdHlwZXQADGRpc3BsYXktbmFtZXQAEWN1c3RvbS1tb2RlbC1kYXRhdXEA\r\nfgAGAAAABHQACEl0ZW1NZXRhdAAKVU5TUEVDSUZJQ3QAl3siZXh0cmEiOlt7InRleHQiOiI8In0s\r\neyJjbGlja0V2ZW50Ijp7ImFjdGlvbiI6Im9wZW5fdXJsIiwidmFsdWUiOiJodHRwOi8vbGFuZy5t\r\nYXRlcmlhbC1pcm9uLWRhZ2dlcj4ifSwidGV4dCI6ImxhbmcubWF0ZXJpYWwtaXJvbi1kYWdnZXI+\r\nIn1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj18\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "IMMUNITY_REDUCTION",
+          "value": 0.2,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "WITHER_ROSE",
+          "name": "attribute_add_immunity_reduction",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ATTACK_DAMAGE",
+          "value": 4.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "IRON_SWORD",
+          "name": "attribute_add_generic_attack_damage",
+          "priority": "SOON"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -3430,7 +3584,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.8,
+          "value": 2.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -3627,7 +3781,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.6,
+          "value": 1.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -3827,7 +3981,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.5,
+          "value": 0.6,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -4218,6 +4372,36 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAANRElBTU9ORF9TV09SRHNxAH4AAHNxAH4AA3VxAH4A\r\nBgAAAARxAH4ACHQACW1ldGEtdHlwZXQADGRpc3BsYXktbmFtZXQAEWN1c3RvbS1tb2RlbC1kYXRh\r\ndXEAfgAGAAAABHQACEl0ZW1NZXRhdAAKVU5TUEVDSUZJQ3QAnXsiZXh0cmEiOlt7InRleHQiOiI8\r\nIn0seyJjbGlja0V2ZW50Ijp7ImFjdGlvbiI6Im9wZW5fdXJsIiwidmFsdWUiOiJodHRwOi8vbGFu\r\nZy5tYXRlcmlhbC1kaWFtb25kLWRhZ2dlcj4ifSwidGV4dCI6ImxhbmcubWF0ZXJpYWwtZGlhbW9u\r\nZC1kYWdnZXI+In1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj18\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "IMMUNITY_REDUCTION",
+          "value": 0.2,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "WITHER_ROSE",
+          "name": "attribute_add_immunity_reduction",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ATTACK_DAMAGE",
+          "value": 5.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "IRON_SWORD",
+          "name": "attribute_add_generic_attack_damage",
+          "priority": "SOON"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -4269,7 +4453,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.8,
+          "value": 2.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -4331,7 +4515,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
         "DATA": {
           "mode": "ADD_ON_DEFAULT",
-          "amplifier": 4.0,
+          "amplifier": 2.0,
           "skillRange": 185.0,
           "rangeOffset": 115.0,
           "minimum": 0.0,
@@ -4559,7 +4743,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.8,
+          "value": 1.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -5025,7 +5209,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.8,
+          "value": 1.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -5519,7 +5703,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 4.0,
+          "value": 2.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -5534,7 +5718,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "IMMUNITY_REDUCTION",
-          "value": 0.5,
+          "value": 0.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -5549,7 +5733,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "ARMOR_PENETRATION_FRACTION",
-          "value": 0.3,
+          "value": 0.35,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -5853,7 +6037,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.6,
+          "value": 1.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -5994,7 +6178,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.6,
+          "value": 1.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -6101,7 +6285,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.8,
+          "value": 1.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -6242,7 +6426,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.6,
+          "value": 1.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -6377,6 +6561,36 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAAMR09MREVOX1NXT1JEc3EAfgAAc3EAfgADdXEAfgAG\r\nAAAABHEAfgAIdAAJbWV0YS10eXBldAAMZGlzcGxheS1uYW1ldAARY3VzdG9tLW1vZGVsLWRhdGF1\r\ncQB+AAYAAAAEdAAISXRlbU1ldGF0AApVTlNQRUNJRklDdACbeyJleHRyYSI6W3sidGV4dCI6Ijwi\r\nfSx7ImNsaWNrRXZlbnQiOnsiYWN0aW9uIjoib3Blbl91cmwiLCJ2YWx1ZSI6Imh0dHA6Ly9sYW5n\r\nLm1hdGVyaWFsLWdvbGRlbi1kYWdnZXI+In0sInRleHQiOiJsYW5nLm1hdGVyaWFsLWdvbGRlbi1k\r\nYWdnZXI+In1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj18\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "IMMUNITY_REDUCTION",
+          "value": 0.2,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "WITHER_ROSE",
+          "name": "attribute_add_immunity_reduction",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ATTACK_DAMAGE",
+          "value": 2.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "IRON_SWORD",
+          "name": "attribute_add_generic_attack_damage",
+          "priority": "SOON"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -6412,7 +6626,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.8,
+          "value": 2.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -6556,7 +6770,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.6,
+          "value": 1.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -6647,7 +6861,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.8,
+          "value": 1.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -6840,7 +7054,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.8,
+          "value": 1.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -7213,7 +7427,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.5,
+          "value": 0.6,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -7245,6 +7459,23 @@
     "id": "iron_rapier_scaling_with_skill",
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAAKSVJPTl9TV09SRHNxAH4AAHNxAH4AA3VxAH4ABgAA\r\nAARxAH4ACHQACW1ldGEtdHlwZXQADGRpc3BsYXktbmFtZXQAEWN1c3RvbS1tb2RlbC1kYXRhdXEA\r\nfgAGAAAABHQACEl0ZW1NZXRhdAAKVU5TUEVDSUZJQ3QAl3siZXh0cmEiOlt7InRleHQiOiI8In0s\r\neyJjbGlja0V2ZW50Ijp7ImFjdGlvbiI6Im9wZW5fdXJsIiwidmFsdWUiOiJodHRwOi8vbGFuZy5t\r\nYXRlcmlhbC1pcm9uLXJhcGllcj4ifSwidGV4dCI6ImxhbmcubWF0ZXJpYWwtaXJvbi1yYXBpZXI+\r\nIn1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj1+\r\n",
     "modifiers": [
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
+        "DATA": {
+          "mode": "ADD_ON_DEFAULT",
+          "amplifier": 0.2,
+          "skillRange": 215.0,
+          "rangeOffset": 85.0,
+          "minimum": 0.0,
+          "skillToScaleWith": "SMITHING",
+          "skillEfficiency": 1.0,
+          "minimumValue": 0.0,
+          "attribute": "GENERIC_ATTACK_SPEED",
+          "icon": "GOLDEN_SWORD",
+          "name": "attribute_scale_generic_attack_speed",
+          "priority": "NEUTRAL"
+        }
+      },
       {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
@@ -7312,7 +7543,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 4.0,
+          "value": 2.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -7327,7 +7558,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "IMMUNITY_REDUCTION",
-          "value": 0.5,
+          "value": 0.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -7342,7 +7573,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "ARMOR_PENETRATION_FRACTION",
-          "value": 0.3,
+          "value": 0.35,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -7894,7 +8125,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.5,
+          "value": 0.6,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -8396,7 +8627,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.5,
+          "value": 0.6,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -8766,7 +8997,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.5,
+          "value": 0.6,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -9060,7 +9291,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.6,
+          "value": 1.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -9227,6 +9458,23 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAALU1RPTkVfU1dPUkRzcQB+AABzcQB+AAN1cQB+AAYA\r\nAAAEcQB+AAh0AAltZXRhLXR5cGV0AAxkaXNwbGF5LW5hbWV0ABFjdXN0b20tbW9kZWwtZGF0YXVx\r\nAH4ABgAAAAR0AAhJdGVtTWV0YXQAClVOU1BFQ0lGSUN0AJl7ImV4dHJhIjpbeyJ0ZXh0IjoiPCJ9\r\nLHsiY2xpY2tFdmVudCI6eyJhY3Rpb24iOiJvcGVuX3VybCIsInZhbHVlIjoiaHR0cDovL2xhbmcu\r\nbWF0ZXJpYWwtc3RvbmUtcmFwaWVyPiJ9LCJ0ZXh0IjoibGFuZy5tYXRlcmlhbC1zdG9uZS1yYXBp\r\nZXI+In1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj1+\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
+        "DATA": {
+          "mode": "ADD_ON_DEFAULT",
+          "amplifier": 0.2,
+          "skillRange": 215.0,
+          "rangeOffset": 85.0,
+          "minimum": 0.0,
+          "skillToScaleWith": "SMITHING",
+          "skillEfficiency": 1.0,
+          "minimumValue": 0.0,
+          "attribute": "GENERIC_ATTACK_SPEED",
+          "icon": "GOLDEN_SWORD",
+          "name": "attribute_scale_generic_attack_speed",
+          "priority": "NEUTRAL"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -9293,7 +9541,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 4.0,
+          "value": 2.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -9308,7 +9556,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "IMMUNITY_REDUCTION",
-          "value": 0.5,
+          "value": 0.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -9323,7 +9571,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "ARMOR_PENETRATION_FRACTION",
-          "value": 0.3,
+          "value": 0.35,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -9388,6 +9636,36 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAAMR09MREVOX1NXT1JEc3EAfgAAc3EAfgADdXEAfgAG\r\nAAAABHEAfgAIdAAJbWV0YS10eXBldAAMZGlzcGxheS1uYW1ldAARY3VzdG9tLW1vZGVsLWRhdGF1\r\ncQB+AAYAAAAEdAAISXRlbU1ldGF0AApVTlNQRUNJRklDdACbeyJleHRyYSI6W3sidGV4dCI6Ijwi\r\nfSx7ImNsaWNrRXZlbnQiOnsiYWN0aW9uIjoib3Blbl91cmwiLCJ2YWx1ZSI6Imh0dHA6Ly9sYW5n\r\nLm1hdGVyaWFsLWdvbGRlbi1kYWdnZXI+In0sInRleHQiOiJsYW5nLm1hdGVyaWFsLWdvbGRlbi1k\r\nYWdnZXI+In1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj18\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "IMMUNITY_REDUCTION",
+          "value": 0.2,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "WITHER_ROSE",
+          "name": "attribute_add_immunity_reduction",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ATTACK_DAMAGE",
+          "value": 2.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "IRON_SWORD",
+          "name": "attribute_add_generic_attack_damage",
+          "priority": "SOON"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -9439,7 +9717,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.8,
+          "value": 2.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -9501,7 +9779,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
         "DATA": {
           "mode": "ADD_ON_DEFAULT",
-          "amplifier": 4.0,
+          "amplifier": 2.0,
           "skillRange": 215.0,
           "rangeOffset": 85.0,
           "minimum": 0.0,
@@ -9586,7 +9864,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 4.0,
+          "value": 2.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -9601,7 +9879,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "IMMUNITY_REDUCTION",
-          "value": 0.5,
+          "value": 0.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -9616,7 +9894,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "ARMOR_PENETRATION_FRACTION",
-          "value": 0.3,
+          "value": 0.35,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -10022,7 +10300,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.6,
+          "value": 1.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -10449,7 +10727,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.5,
+          "value": 0.6,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -10532,7 +10810,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 4.0,
+          "value": 2.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -10547,7 +10825,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "IMMUNITY_REDUCTION",
-          "value": 0.5,
+          "value": 0.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -10562,7 +10840,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "ARMOR_PENETRATION_FRACTION",
-          "value": 0.3,
+          "value": 0.35,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -10784,7 +11062,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.8,
+          "value": 1.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -10993,6 +11271,36 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAAMV09PREVOX1NXT1JEc3EAfgAAc3EAfgADdXEAfgAG\r\nAAAABHEAfgAIdAAJbWV0YS10eXBldAAMZGlzcGxheS1uYW1ldAARY3VzdG9tLW1vZGVsLWRhdGF1\r\ncQB+AAYAAAAEdAAISXRlbU1ldGF0AApVTlNQRUNJRklDdACbeyJleHRyYSI6W3sidGV4dCI6Ijwi\r\nfSx7ImNsaWNrRXZlbnQiOnsiYWN0aW9uIjoib3Blbl91cmwiLCJ2YWx1ZSI6Imh0dHA6Ly9sYW5n\r\nLm1hdGVyaWFsLXdvb2Rlbi1kYWdnZXI+In0sInRleHQiOiJsYW5nLm1hdGVyaWFsLXdvb2Rlbi1k\r\nYWdnZXI+In1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj18\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "IMMUNITY_REDUCTION",
+          "value": 0.2,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "WITHER_ROSE",
+          "name": "attribute_add_immunity_reduction",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ATTACK_DAMAGE",
+          "value": 2.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "IRON_SWORD",
+          "name": "attribute_add_generic_attack_damage",
+          "priority": "SOON"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -11044,7 +11352,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.8,
+          "value": 2.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -11089,7 +11397,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
         "DATA": {
           "mode": "ADD_ON_DEFAULT",
-          "amplifier": 4.0,
+          "amplifier": 2.0,
           "skillRange": 275.0,
           "rangeOffset": 25.0,
           "minimum": 0.0,
@@ -11236,7 +11544,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.8,
+          "value": 1.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -11358,7 +11666,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.5,
+          "value": 0.6,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -11790,7 +12098,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.8,
+          "value": 1.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -12218,7 +12526,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.6,
+          "value": 1.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -12300,6 +12608,36 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAALU1RPTkVfU1dPUkRzcQB+AABzcQB+AAN1cQB+AAYA\r\nAAAEcQB+AAh0AAltZXRhLXR5cGV0AAxkaXNwbGF5LW5hbWV0ABFjdXN0b20tbW9kZWwtZGF0YXVx\r\nAH4ABgAAAAR0AAhJdGVtTWV0YXQAClVOU1BFQ0lGSUN0AJl7ImV4dHJhIjpbeyJ0ZXh0IjoiPCJ9\r\nLHsiY2xpY2tFdmVudCI6eyJhY3Rpb24iOiJvcGVuX3VybCIsInZhbHVlIjoiaHR0cDovL2xhbmcu\r\nbWF0ZXJpYWwtc3RvbmUtZGFnZ2VyPiJ9LCJ0ZXh0IjoibGFuZy5tYXRlcmlhbC1zdG9uZS1kYWdn\r\nZXI+In1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj18\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "IMMUNITY_REDUCTION",
+          "value": 0.2,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "WITHER_ROSE",
+          "name": "attribute_add_immunity_reduction",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ATTACK_DAMAGE",
+          "value": 3.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "IRON_SWORD",
+          "name": "attribute_add_generic_attack_damage",
+          "priority": "SOON"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -12335,7 +12673,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.8,
+          "value": 2.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -12426,7 +12764,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.5,
+          "value": 0.6,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -13259,7 +13597,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.5,
+          "value": 0.6,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -13497,6 +13835,23 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAAMR09MREVOX1NXT1JEc3EAfgAAc3EAfgADdXEAfgAG\r\nAAAABHEAfgAIdAAJbWV0YS10eXBldAAMZGlzcGxheS1uYW1ldAARY3VzdG9tLW1vZGVsLWRhdGF1\r\ncQB+AAYAAAAEdAAISXRlbU1ldGF0AApVTlNQRUNJRklDdACbeyJleHRyYSI6W3sidGV4dCI6Ijwi\r\nfSx7ImNsaWNrRXZlbnQiOnsiYWN0aW9uIjoib3Blbl91cmwiLCJ2YWx1ZSI6Imh0dHA6Ly9sYW5n\r\nLm1hdGVyaWFsLWdvbGRlbi1yYXBpZXI+In0sInRleHQiOiJsYW5nLm1hdGVyaWFsLWdvbGRlbi1y\r\nYXBpZXI+In1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj1+\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeScale",
+        "DATA": {
+          "mode": "ADD_ON_DEFAULT",
+          "amplifier": 0.2,
+          "skillRange": 215.0,
+          "rangeOffset": 85.0,
+          "minimum": 0.0,
+          "skillToScaleWith": "SMITHING",
+          "skillEfficiency": 1.0,
+          "minimumValue": 0.0,
+          "attribute": "GENERIC_ATTACK_SPEED",
+          "icon": "GOLDEN_SWORD",
+          "name": "attribute_scale_generic_attack_speed",
+          "priority": "NEUTRAL"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -13548,7 +13903,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 4.0,
+          "value": 2.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -13578,7 +13933,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "IMMUNITY_REDUCTION",
-          "value": 0.5,
+          "value": 0.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -13593,7 +13948,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "ARMOR_PENETRATION_FRACTION",
-          "value": 0.3,
+          "value": 0.35,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -13948,7 +14303,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.6,
+          "value": 1.3,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -14480,7 +14835,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 0.8,
+          "value": 1.0,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
@@ -15125,6 +15480,36 @@
     "item": "rO0ABXNyABpvcmcuYnVra2l0LnV0aWwuaW8uV3JhcHBlcvJQR+zxEm8FAgABTAADbWFwdAAPTGph\r\ndmEvdXRpbC9NYXA7eHBzcgA1Y29tLmdvb2dsZS5jb21tb24uY29sbGVjdC5JbW11dGFibGVNYXAk\r\nU2VyaWFsaXplZEZvcm0AAAAAAAAAAAIAAkwABGtleXN0ABJMamF2YS9sYW5nL09iamVjdDtMAAZ2\r\nYWx1ZXNxAH4ABHhwdXIAE1tMamF2YS5sYW5nLk9iamVjdDuQzlifEHMpbAIAAHhwAAAABHQAAj09\r\ndAABdnQABHR5cGV0AARtZXRhdXEAfgAGAAAABHQAHm9yZy5idWtraXQuaW52ZW50b3J5Lkl0ZW1T\r\ndGFja3NyABFqYXZhLmxhbmcuSW50ZWdlchLioKT3gYc4AgABSQAFdmFsdWV4cgAQamF2YS5sYW5n\r\nLk51bWJlcoaslR0LlOCLAgAAeHAAAAwhdAAMV09PREVOX1NXT1JEc3EAfgAAc3EAfgADdXEAfgAG\r\nAAAABHEAfgAIdAAJbWV0YS10eXBldAAMZGlzcGxheS1uYW1ldAARY3VzdG9tLW1vZGVsLWRhdGF1\r\ncQB+AAYAAAAEdAAISXRlbU1ldGF0AApVTlNQRUNJRklDdACbeyJleHRyYSI6W3sidGV4dCI6Ijwi\r\nfSx7ImNsaWNrRXZlbnQiOnsiYWN0aW9uIjoib3Blbl91cmwiLCJ2YWx1ZSI6Imh0dHA6Ly9sYW5n\r\nLm1hdGVyaWFsLXdvb2Rlbi1kYWdnZXI+In0sInRleHQiOiJsYW5nLm1hdGVyaWFsLXdvb2Rlbi1k\r\nYWdnZXI+In1dLCJ0ZXh0IjoiIn1zcQB+AA4AHj18\r\n",
     "modifiers": [
       {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "IMMUNITY_REDUCTION",
+          "value": 0.2,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.01,
+          "bigIncrement": 0.1,
+          "icon": "WITHER_ROSE",
+          "name": "attribute_add_immunity_reduction",
+          "priority": "SOON"
+        }
+      },
+      {
+        "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
+        "DATA": {
+          "attribute": "GENERIC_ATTACK_DAMAGE",
+          "value": 2.0,
+          "hidden": false,
+          "add": false,
+          "operation": "ADD_NUMBER",
+          "smallIncrement": 0.1,
+          "bigIncrement": 1.0,
+          "icon": "IRON_SWORD",
+          "name": "attribute_add_generic_attack_damage",
+          "priority": "SOON"
+        }
+      },
+      {
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_misc.FlagCustomAdd",
         "DATA": {
           "flag": "DISPLAY_ATTRIBUTES",
@@ -15160,7 +15545,7 @@
         "MOD_TYPE": "me.athlaeos.valhallammo.crafting.dynamicitemmodifiers.implementations.item_stats.DefaultAttributeAdd",
         "DATA": {
           "attribute": "GENERIC_ATTACK_SPEED",
-          "value": 1.8,
+          "value": 2.8,
           "hidden": false,
           "add": false,
           "operation": "ADD_NUMBER",
