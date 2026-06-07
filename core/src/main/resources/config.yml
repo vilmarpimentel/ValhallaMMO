@@ -36,6 +36,10 @@ admin_gui_filler_removal: true # If true, admin-visible menus like recipe editor
 resource_pack_config_override: false # If true, certain config options are overridden by hard-coded values that work with the ValhallaMMO resource pack
 # This option can be toggled in-game with /val resourcepack <enable/disable>
 
+# When a player levels up a skill, broadcast a message to all OTHER online players (the player who levelled up still gets their normal level-up message).
+# The message text is defined in the language file under the key "skill_levelup_broadcast" (placeholders: %player%, %level%, %skill%). Set the key to "" there to disable, or toggle the whole feature off below.
+broadcast_levelup: true
+
 # GENERAL
 # The plugin features item and player stat properties that give the player permanent potion effects, this is how said effects are stacked
 # to each-other if multiple of the same type are present.

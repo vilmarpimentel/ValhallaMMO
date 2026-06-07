@@ -1,5 +1,6 @@
 {
   "stringTranslations": {
+    "skill_levelup_broadcast": "&7[&6Skills&7] &e%player% &7reached level &e%level% &7in &6%skill%&7!",
     "error_crafting_no_ingredients": "&cInsufficient ingredients.",
     "error_crafting_no_space": "&cYou have a full inventory!",
     "error_crafting_tinker_fail": "&cCan't tinker this!",
@@ -3623,67 +3624,52 @@
       "&a%member_list%"
     ],
     "skill-level-up-power": [
-      "TITLE(&7You leveled up to &e%level%&7;&7Check &e/skills &7for available perks;40;5)"
+      "ACTIONBAR&7You leveled up to &e%level%&7. Check &e/skills"
     ],
     "skill-level-up-martial-arts": [
-      "TITLE(&r;&aUnarmed&7 leveled up to &a%level%)",
-      "&aUnarmed&7 leveled up to &a%level%"
+      "ACTIONBAR&aUnarmed&7 leveled up to &a%level%"
     ],
     "skill-level-up-trading": [
-      "TITLE(&r;&aTrading&7 leveled up to &a%level%)",
-      "&aTrading&7 leveled up to &a%level%"
+      "ACTIONBAR&aTrading&7 leveled up to &a%level%"
     ],
     "skill-level-up-smithing": [
-      "TITLE(&r;&eSmithing&7 leveled up to &e%level%)",
-      "&eSmithing&7 leveled up to &e%level%"
+      "ACTIONBAR&eSmithing&7 leveled up to &e%level%"
     ],
     "skill-level-up-mining": [
-      "TITLE(&r;&cMining&7 leveled up to &c%level%)",
-      "&cMining&7 leveled up to &c%level%"
+      "ACTIONBAR&cMining&7 leveled up to &c%level%"
     ],
     "skill-level-up-light-weapons": [
-      "TITLE(&r;&eLight Weapons&7 leveled up to &e%level%)",
-      "&eLight Weapons&7 leveled up to &e%level%"
+      "ACTIONBAR&eLight Weapons&7 leveled up to &e%level%"
     ],
     "skill-level-up-light-armor": [
-      "TITLE(&r;&eLight Armor&7 leveled up to &e%level%)",
-      "&eLight Armor&7 leveled up to &e%level%"
+      "ACTIONBAR&eLight Armor&7 leveled up to &e%level%"
     ],
     "skill-level-up-woodcutting": [
-      "TITLE(&r;&aWoodcutting&7 leveled up to &a%level%)",
-      "&aWoodcutting&7 leveled up to &a%level%"
+      "ACTIONBAR&aWoodcutting&7 leveled up to &a%level%"
     ],
     "skill-level-up-digging": [
-      "TITLE(&r;&aDigging&7 leveled up to &a%level%)",
-      "&aDigging&7 leveled up to &a%level%"
+      "ACTIONBAR&aDigging&7 leveled up to &a%level%"
     ],
     "skill-level-up-heavy-weapons": [
-      "TITLE(&r;&cHeavy Weapons&7 leveled up to &c%level%)",
-      "&cHeavy Weapons&7 leveled up to &c%level%"
+      "ACTIONBAR&cHeavy Weapons&7 leveled up to &c%level%"
     ],
     "skill-level-up-heavy-armor": [
-      "TITLE(&r;&cHeavy Armor&7 leveled up to &c%level%)",
-      "&cHeavy Armor&7 leveled up to &c%level%"
+      "ACTIONBAR&cHeavy Armor&7 leveled up to &c%level%"
     ],
     "skill-level-up-farming": [
-      "TITLE(&r;&aFarming&7 leveled up to &a%level%)",
-      "&aFarming&7 leveled up to &a%level%"
+      "ACTIONBAR&aFarming&7 leveled up to &a%level%"
     ],
     "skill-level-up-fishing": [
-      "TITLE(&r;&bFishing&7 leveled up to &b%level%)",
-      "&bFishing&7 leveled up to &b%level%"
+      "ACTIONBAR&bFishing&7 leveled up to &b%level%"
     ],
     "skill-level-up-enchanting": [
-      "TITLE(&r;&bEnchanting&7 leveled up to &b%level%)",
-      "&bEnchanting&7 leveled up to &b%level%"
+      "ACTIONBAR&bEnchanting&7 leveled up to &b%level%"
     ],
     "skill-level-up-archery": [
-      "TITLE(&r;&eArchery&7 leveled up to &e%level%)",
-      "&eArchery&7 leveled up to &e%level%"
+      "ACTIONBAR&eArchery&7 leveled up to &e%level%"
     ],
     "skill-level-up-alchemy": [
-      "TITLE(&r;&dAlchemy&7 leveled up to &d%level%)",
-      "&dAlchemy&7 leveled up to &d%level%"
+      "ACTIONBAR&dAlchemy&7 leveled up to &d%level%"
     ],
     "default_recipe_description_cooking": [
       "&e%input% &ecooks into %result%"

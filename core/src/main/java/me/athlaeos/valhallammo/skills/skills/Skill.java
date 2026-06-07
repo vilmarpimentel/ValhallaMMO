@@ -830,6 +830,23 @@ public abstract class Skill {
                         }
                     }.runTaskTimer(ValhallaMMO.getInstance(), 0L, 1L);
                 }
+
+                // Broadcast the level-up to all OTHER online players (not the one who levelled up)
+                if (ValhallaMMO.getPluginConfig().getBoolean("broadcast_levelup", true)) {
+                    // Message text comes from the language file (key: skill_levelup_broadcast), not hard-coded here
+                    String template = TranslationManager.getTranslation("skill_levelup_broadcast");
+                    if (template != null && !template.isBlank() && !template.equals("skill_levelup_broadcast")) {
+                        String skillName = (displayName != null && !displayName.isBlank()) ? displayName : getType();
+                        String broadcast = template
+                                .replace("%player%", p.getName())
+                                .replace("%level%", String.valueOf(to))
+                                .replace("%skill%", skillName);
+                        for (Player online : ValhallaMMO.getInstance().getServer().getOnlinePlayers()) {
+                            if (online.getUniqueId().equals(p.getUniqueId())) continue;
+                            Utils.sendMessage(online, broadcast);
+                        }
+                    }
+                }
             }
 
             ValhallaMMO.getInstance().getServer().getScheduler().runTaskAsynchronously(ValhallaMMO.getInstance(), () -> {
