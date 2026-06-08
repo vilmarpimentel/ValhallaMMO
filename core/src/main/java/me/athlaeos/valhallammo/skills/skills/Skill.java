@@ -22,7 +22,7 @@ import me.athlaeos.valhallammo.playerstats.profiles.implementations.PowerProfile
 import me.athlaeos.valhallammo.skills.perkunlockconditions.UnlockCondition;
 import me.athlaeos.valhallammo.skills.perkunlockconditions.UnlockConditionRegistry;
 import me.athlaeos.valhallammo.skills.skills.implementations.PowerSkill;
-import me.athlaeos.valhallammo.utility.BossBarUtils;
+import me.athlaeos.valhallammo.utility.LevelSidebarUtils;
 import me.athlaeos.valhallammo.utility.ItemUtils;
 import me.athlaeos.valhallammo.utility.StringUtils;
 import me.athlaeos.valhallammo.utility.Utils;
@@ -688,20 +688,19 @@ public abstract class Skill {
         if (!StringUtils.isEmpty(expBarTitle)) {
             double expForNextLevel = expForLevel(profile.getLevel() + 1);
 
-            String bossBarTitle = Utils.chat(expBarTitle
-                    .replace("%skill%", this.displayName)
-                    .replace("%exp%", ((accumulatedEXP >= 0) ? "+" : "") + String.format("%,.2f", accumulatedEXP))
-                    .replace("%exp_current%", String.format("%.2f", profile.getEXP()))
-                    .replace("%lv_current%", String.valueOf(profile.getLevel()))
-                    .replace("%lv_next%", (expForNextLevel == -1) ? TranslationManager.getTranslation("max_level") : String.valueOf(profile.getLevel() + 1))
-                    .replace("%exp_next%", (expForNextLevel == -1) ? TranslationManager.getTranslation("max_level") : String.format("%.2f", expForNextLevel)));
             float fraction;
             if (expForNextLevel <= 0) {
                 fraction = 1;
             } else {
                 fraction = (float) Utils.round6Decimals(profile.getEXP() / expForNextLevel);
             }
-            BossBarUtils.showBossBarToPlayer(p, bossBarTitle, Math.min(fraction, 1F), 50, this.type, expBarColor, expBarStyle);
+            // Shown in a scoreboard sidebar (side panel) instead of a boss bar, so the boss bar
+            // (top-center) stays free for the monster health display. Only the skill name (title),
+            // the current level and the progress bar are shown - no raw EXP numbers.
+            List<String> lines = new ArrayList<>();
+            lines.add(Utils.chat("&7Level &e" + profile.getLevel()));
+            lines.add(LevelSidebarUtils.progressBar(Math.min(fraction, 1F)));
+            LevelSidebarUtils.showLevelSidebar(p, this.displayName, lines, 50);
         }
     }
 
