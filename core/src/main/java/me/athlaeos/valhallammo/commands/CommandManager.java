@@ -22,6 +22,7 @@ public class CommandManager implements TabExecutor {
 		commands.put("recipes", new ManageRecipesCommand());
 		commands.put("profile", new ProfileStatsCommand());
 		commands.put("reset", new ResetProfilesCommand());
+		commands.put("copyprofile", new CopyProfileCommand());
 		commands.put("skills", new ViewSkillTreeCommand());
   		commands.put("modify", new ModifyCommand());
 		commands.put("reward", new PerkRewardCommand());
