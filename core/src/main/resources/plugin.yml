@@ -166,7 +166,7 @@ permissions:
     description: "Access to the /valhalla reset command, which allows the user to only hard reset their own progress."
   valhalla.copyprofile:
     default: op
-    description: "Access to the /valhalla copyprofile command, which copies the levels, EXP and perks of one account onto another."
+    description: "Access to the /valhalla copyprofile command, which copies the levels, EXP, perks and recipes of one account onto another."
   valhalla.ignorediminishingreturns:
     default: false
     description: "Allows the user to bypass diminishing returns on EXP gain."

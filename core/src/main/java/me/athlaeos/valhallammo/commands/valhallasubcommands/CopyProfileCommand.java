@@ -2,6 +2,10 @@ package me.athlaeos.valhallammo.commands.valhallasubcommands;
 
 import me.athlaeos.valhallammo.ValhallaMMO;
 import me.athlaeos.valhallammo.commands.Command;
+import me.athlaeos.valhallammo.crafting.CustomRecipeRegistry;
+import me.athlaeos.valhallammo.crafting.recipetypes.DynamicCookingRecipe;
+import me.athlaeos.valhallammo.crafting.recipetypes.DynamicGridRecipe;
+import me.athlaeos.valhallammo.crafting.recipetypes.DynamicSmithingRecipe;
 import me.athlaeos.valhallammo.persistence.ProfilePersistence;
 import me.athlaeos.valhallammo.playerstats.profiles.Profile;
 import me.athlaeos.valhallammo.playerstats.profiles.ProfileRegistry;
@@ -9,11 +13,11 @@ import me.athlaeos.valhallammo.playerstats.profiles.implementations.PowerProfile
 import me.athlaeos.valhallammo.skills.skills.SkillRegistry;
 import me.athlaeos.valhallammo.utility.Utils;
 import org.bukkit.Bukkit;
+import org.bukkit.NamespacedKey;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,8 +26,8 @@ import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 /**
- * Copies the levels, EXP and unlocked perks of one account onto another. Useful when a player
- * renamed their account (new UUID) and wants their old progress transferred to the new account.
+ * Copies the levels, EXP, unlocked perks and unlocked recipes of one account onto another. Useful when a
+ * player renamed their account (new UUID) and wants their old progress transferred to the new account.
  * Both source and target may be online or offline. The target's existing progress is overwritten.
  */
 public class CopyProfileCommand implements Command {
@@ -33,7 +37,6 @@ public class CopyProfileCommand implements Command {
         if (args.length < 3) return false;
         String sourceName = args[1];
         String targetName = args[2];
-        boolean confirmed = args.length >= 4 && args[3].equalsIgnoreCase("confirm");
 
         if (sourceName.equalsIgnoreCase(targetName)) {
             Utils.sendMessage(sender, Utils.chat("&cThe source and target cannot be the same player."));
@@ -43,12 +46,6 @@ public class CopyProfileCommand implements Command {
         ProfilePersistence persistence = ProfileRegistry.getPersistence();
         if (persistence == null) {
             Utils.sendMessage(sender, Utils.chat("&cThe profile database is not ready yet."));
-            return true;
-        }
-
-        if (!confirmed) {
-            Utils.sendMessage(sender, Utils.chat("&eThis will &cOVERWRITE&e all of &f" + targetName + "&e's levels, EXP and perks with those of &f" + sourceName + "&e."));
-            Utils.sendMessage(sender, Utils.chat("&eRun &f/valhalla copyprofile " + sourceName + " " + targetName + " confirm&e to proceed."));
             return true;
         }
 
@@ -102,15 +99,16 @@ public class CopyProfileCommand implements Command {
                     }
                     ProfilePersistence.markProfilesReset(targetId, copies.keySet());
                     SkillRegistry.updateSkillProgression(onlineTarget, false);
+                    refreshRecipeBook(onlineTarget);
                     persistence.saveProfileAsync(targetId);
-                    Utils.sendMessage(sender, Utils.chat("&aCopied &f" + sourceName + "&a's progress onto &f" + targetName + "&a (online)."));
+                    Utils.sendMessage(sender, Utils.chat("&aCopied &f" + sourceName + "&a's levels, EXP, perks and recipes onto &f" + targetName + "&a (online)."));
                 });
             } else {
                 // Target is offline: write straight to the database under the target's UUID.
                 for (Profile targetProfile : copies.values()) {
                     persistence.insertOrUpdateProfile(targetId, targetProfile);
                 }
-                runSync(() -> Utils.sendMessage(sender, Utils.chat("&aCopied &f" + sourceName + "&a's progress onto &f" + targetName + "&a. They will have it the next time they log in.")));
+                runSync(() -> Utils.sendMessage(sender, Utils.chat("&aCopied &f" + sourceName + "&a's levels, EXP, perks and recipes onto &f" + targetName + "&a. They will have it the next time they log in.")));
             }
         }, persistence.profileThreads).exceptionally(ex -> {
             ValhallaMMO.logWarning("Failed to copy profile from " + sourceName + " to " + targetName + ": ");
@@ -126,19 +124,43 @@ public class CopyProfileCommand implements Command {
         Bukkit.getScheduler().runTask(ValhallaMMO.getInstance(), runnable);
     }
 
+    /**
+     * Re-syncs the player's Minecraft recipe book with the recipes their (just updated) profile unlocked,
+     * mirroring what {@link me.athlaeos.valhallammo.listeners.RecipeDiscoveryListener} does on join, so the
+     * copied recipes show up immediately instead of only after relogging.
+     */
+    private static void refreshRecipeBook(Player player) {
+        PowerProfile profile = ProfileRegistry.getMergedProfile(player, PowerProfile.class);
+        boolean allPermission = player.hasPermission("valhalla.allrecipes");
+        for (NamespacedKey key : CustomRecipeRegistry.getDisabledRecipes()) player.undiscoverRecipe(key);
+        for (DynamicGridRecipe recipe : CustomRecipeRegistry.getGridRecipes().values()){
+            if (!recipe.isHiddenFromBook() && (recipe.isUnlockedForEveryone() || profile.getUnlockedRecipes().contains(recipe.getName()) || allPermission || player.hasPermission("valhalla.recipe." + recipe.getName()))) player.discoverRecipe(recipe.getKey());
+            else player.undiscoverRecipe(recipe.getKey());
+            player.undiscoverRecipe(recipe.getKey2());
+        }
+        for (DynamicSmithingRecipe recipe : CustomRecipeRegistry.getSmithingRecipes().values()){
+            if (!recipe.isHiddenFromBook() && (recipe.isUnlockedForEveryone() || profile.getUnlockedRecipes().contains(recipe.getName()) || allPermission || player.hasPermission("valhalla.recipe." + recipe.getName()))) player.discoverRecipe(recipe.getKey());
+            else player.undiscoverRecipe(recipe.getKey());
+        }
+        for (DynamicCookingRecipe recipe : CustomRecipeRegistry.getCookingRecipes().values()){
+            if (!recipe.isHiddenFromBook() && (recipe.isUnlockedForEveryone() || profile.getUnlockedRecipes().contains(recipe.getName()) || allPermission || player.hasPermission("valhalla.recipe." + recipe.getName()))) player.discoverRecipe(recipe.getKey());
+            else player.undiscoverRecipe(recipe.getKey());
+        }
+    }
+
     @Override
     public String getFailureMessage(String[] args) {
-        return "&c/valhalla copyprofile [source] [target] <confirm>";
+        return "&c/valhalla copyprofile [source] [target]";
     }
 
     @Override
     public String getDescription() {
-        return "Copies the levels, EXP and perks of one account onto another (e.g. after a rename).";
+        return "Copies the levels, EXP, perks and recipes of one account onto another (e.g. after a rename).";
     }
 
     @Override
     public String getCommand() {
-        return "/valhalla copyprofile [source] [target] <confirm>";
+        return "/valhalla copyprofile [source] [target]";
     }
 
     @Override
@@ -156,7 +178,6 @@ public class CopyProfileCommand implements Command {
         if (args.length == 2 || args.length == 3) {
             return Bukkit.getOnlinePlayers().stream().map(Player::getName).collect(Collectors.toList());
         }
-        if (args.length == 4) return new ArrayList<>(List.of("confirm"));
         return Command.noSubcommandArgs();
     }
 }
